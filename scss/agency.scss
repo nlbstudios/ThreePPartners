@@ -369,22 +369,12 @@ section {
 }
 // Services Section
 
-#services {
-    background: url("http://i63.tinypic.com/jl1j54.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 100%;
-    .service-heading {
-        margin: 25px 0px 15px 140px;
-        text-transform: none;
-        color:white;
-        font-size: 32px;
-        font-style:italic;
-    }
-}
+
+//This is a test to see if the background image is messing up because of the name.
+
 
 // #services {
-//     background: url("/img/services_background.png");
+//     background: url("http://i63.tinypic.com/jl1j54.png");
 //     background-repeat: no-repeat;
 //     background-position: center;
 //     background-size: auto 100%;
@@ -397,9 +387,23 @@ section {
 //     }
 // }
 
+#services {
+    background: url("/img/serviceback.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    .service-heading {
+        margin: 25px 0px 15px 140px;
+        text-transform: none;
+        color:white;
+        font-size: 32px;
+        font-style:italic;
+    }
+}
+
 @media (min-width:992px){
   #services {
-      background-image: url("/img/services_background.png");
+      background-image: url("/img/serviceback.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100% 100%;
