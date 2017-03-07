@@ -358,21 +358,21 @@ section {
   color: white; }
 
 #welcome {
-  background-image: url("/img/welcome_background.png");
+  background-image: url("../img/welcome_background.png");
   background-repeat: no-repeat;
   background-size: 125% 50%;
   background-position: center center; }
 
 @media (min-width: 768px) {
   #welcome {
-    background-image: url("/img/welcome_background.png");
+    background-image: url("../img/welcome_background.png");
     background-repeat: no-repeat;
     background-size: 125% 100%;
     background-position: center center; } }
 
 @media (min-width: 1200px) {
   #welcome {
-    background-image: url("/img/welcome_background.png");
+    background-image: url("../img/welcome_background.png");
     background-repeat: no-repeat;
     background-size: 125% 150%;
     background-position: center center; } }
@@ -381,29 +381,44 @@ section {
   margin: 0 0 30px; }
 
 #services {
-  background: url("/img/serviceback.png");
+  background: url("../img/serviceback.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 100%; }
-  #services .service-heading {
-    margin: 25px 0px 15px 140px;
-    text-transform: none;
-    color: white;
-    font-size: 32px;
-    font-style: italic; }
+  background-size: auto 100%;
+  padding: 8% 10px 8% 10px; }
 
 @media (min-width: 992px) {
   #services {
-    background-image: url("/img/serviceback.png");
+    background-image: url("../img/serviceback.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%; } }
+    background-size: 100% 100%;
+    padding: 8% 35px 8% 35px; } }
+
+.service-heading {
+  margin: 25px 0px 15px 20px;
+  color: white;
+  font-size: 32px;
+  font-style: italic; }
 
 #services-content {
   color: #c8c8c8;
   margin-top: 25px; }
 
-.icon-shift {
+.icon-col {
+  max-width: 600px; }
+
+.services-icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.icon-left {
+  margin-right: 35px; }
+
+.icon-pos-fix {
   margin-left: 3px; }
 
 #portfolio .portfolio-item {
