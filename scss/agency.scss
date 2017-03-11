@@ -7,7 +7,7 @@ body {
 }
 
 .text-content {
-    color: $gray;
+    color: $gray-light;
 }
 
 .text-muted {
@@ -86,6 +86,27 @@ h6 {
     letter-spacing: 1px;
 }
 
+.btn-xl-primary:hover{
+  background-color: $theme-primary;
+  color:white;
+}
+
+.btn-xl-team {
+    @include button-variant($theme-primary, transparent, $theme-primary);
+    @include heading-font;
+    font-weight: 300;
+    font-style: italic;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+}
+
+.btn-xl-team:hover{
+  background-color: $theme-primary;
+  color:white;
+}
+
 .btn-xl-white {
     @include button-variant(white, transparent, white);
     @include heading-font;
@@ -96,6 +117,12 @@ h6 {
     padding: 8px 20px;
     letter-spacing: 1px;
 }
+
+.btn-xl-white:hover {
+  background-color: white;
+  color: $theme-primary;
+}
+
 // Custom Navigation Bar
 
 .navbar-custom {
@@ -367,11 +394,19 @@ section {
 
 .welcome-content {
     @include large-content;
-    margin: 0 15px 15px 30px;
+    font-size: 20px;
+    margin: 0;
 }
 
-.more-content{
+#morewelcome{
+    margin-top:25px;
+}
 
+@media (min-width:768px){
+  .welcome-content {
+      @include large-content;
+      margin: 0 15px 15px 30px;
+  }
 }
 
 // Services Section
@@ -425,86 +460,40 @@ section {
     margin-left: 3px;
 }
 // Portfolio Section
-#slider {
-    position: relative;
-    overflow: hidden;
-    margin: 20px auto 0;
-    border-radius: 4px;
+
+.portfolio-main{
+  margin:auto 40px;
+  padding: 20px 20px;
+  background-color: white;
 }
 
-#slider ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    height: 200px;
-    list-style: none;
-}
+.portfolio-thumbnails{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 
-#slider ul li {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 500px;
-    height: 300px;
-    background: #ccc;
-    text-align: center;
-    line-height: 300px;
 }
-
-a.control_prev, a.control_next {
-  position: absolute;
-  top: 40%;
-  z-index: 999;
-  display: block;
-  padding: 4% 3%;
-  width: auto;
-  height: auto;
-  background: #2a2a2a;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-a.control_prev:hover, a.control_next:hover {
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
-}
-
-a.control_prev {
-  border-radius: 0 2px 2px 0;
-}
-
-a.control_next {
-  right: 0;
-  border-radius: 2px 0 0 2px;
-}
-
-.slider_option {
-  position: relative;
-  margin: 10px auto;
-  width: 160px;
-  font-size: 18px;
-}
-
 
 // Team Section
 .team-member {
     text-align: center;
     margin-bottom: 50px;
 
+
+
     .bio-box {
         margin: 20px 0 0;
     }
 
-    .bio-text {}
+    .bio-text {
+      color: $gray-light;
+      font-size: 17px;
+      line-height: 22px;
+    }
 
     img {
-        margin: 0 auto;
+        margin: auto auto;
         border: 3px solid $gray-lighter;
         border-radius: 25px;
     }
@@ -513,12 +502,45 @@ a.control_next {
         margin-top: 25px;
         margin-bottom: 0;
         text-transform: none;
+        color: $gray-light;
+        font-size: 21px;
     }
 
     p {
         margin-top: 0;
     }
 }
+
+#morebio{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media(min-width:768px){
+  .team-member{
+    .bio-text{
+      font-size: 17px;
+      line-height: 25px;
+    }
+    img{
+      margin:40px 20px;
+    }
+    .leftpic{
+      float:left;
+    }
+    .rightpic{
+      float:right;
+    }
+    h4{
+      font-size: 29px;
+
+    }
+    .teamname{
+      padding-top:60px;
+    }
+  }
+}
+
 // Clients Aside
 
 aside.clients {
