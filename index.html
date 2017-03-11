@@ -13,7 +13,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet" type="text/css">
@@ -93,11 +94,13 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Welcome</h2>
                     <div class="header-underline"></div>
-                    <div class="col-md-8 col-md-offset-2">
-                        <p class="text-content welcome-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum feugiat turpis eget varius. Integer ut sapien in mauris molestie sagittis a a felis. Nullam et lacus varius, aliquam felis et, euismod ligula. Praesent sed
-                            purus dapibus, dignissim augue vel, vehicula elit. Maecenas vitae tellus leo Etiam congue ornare erat, in ornare turpis fringilla nec. Sed scelerisque pellentesque tempus. Mauris pellentesque, nibh id laoreet rutrum, mauris
-                            odio condimentum dolor, placerat tincidunt tortor tortor eu sapien.</p>
-                        <a href="#" class="page-scroll btn btn-xl-primary">Read more</a>
+                    <div class="col-md-10 col-md-offset-1">
+                        <p class="text-content welcome-content">Three P Partners is an innovative full service development company with the mission to identify, select, and produce hospitality and other real estate ventures. Our team is proficient at identifying off-market deals and properties
+                            where added value is immediate, in addition to traditional brokered and incentivized deals with real estate professionals.
+                            <span id="welcome-more" class="text-content more-content">The financial goals for the majority of the projects that Three P identifies are immediate cash flow, short-term capital event horizons, low leverage, and limited speculation. Three P goes beyond the simple hunting and gathering
+                                of individual properties and portfolios and uses its experience and national network to identify and analyze a wide range of development deals in different geographical markets. Three P creates models, developmental strategies,
+                                and aims to fit the return thresholds and financial goals of its members and partners.</p>
+                        <span class="page-scroll btn btn-xl-primary" id="morewelcome">Read More</span>
                     </div>
                 </div>
             </div>
@@ -106,7 +109,7 @@
 
 
     <!-- Services Section -->
-    <section id="services">
+    <section id="services" class="text-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -115,41 +118,42 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center">
-            <div class="col-md-4 icon-col">
-              <div class="services-icon">
-                <span class="fa-stack fa-4x">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 icon-col text-center">
+                    <div class="services-icon">
+                        <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-search fa-stack-1x fa-inverse"></i>
                       </span>
 
-                    <h4 class="service-heading">Identify</h4>
-                  </div>
-                <p class="text-muted text-center" id="services-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impeit.</p>
-            </div>
-            <div class="col-md-4 icon-col">
-              <div class="services-icon">
-                <span class="fa-stack fa-4x">
+                        <h4 class="service-heading">Identify</h4>
+                    </div>
+                    <p class="text-muted text-center" id="services-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impeit.</p>
+                </div>
+                <div class="col-md-4 icon-col">
+                    <div class="services-icon">
+                        <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-check fa-stack-1x fa-inverse"></i>
                       </span>
 
-                    <h4 class="service-heading">Select</h4>
-                  </div>
-                <p class="text-muted" id="services-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-            </div>
-            <div class="col-md-4 icon-col">
-              <div class="services-icon">
-                <span class="fa-stack fa-4x">
+                        <h4 class="service-heading">Select</h4>
+                    </div>
+                    <p class="text-muted" id="services-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4 icon-col">
+                    <div class="services-icon">
+                        <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary "></i>
                         <i class="fa fa-bank fa-stack-1x fa-inverse icon-pos-fix"></i>
                       </span>
 
-                    <h4 class="service-heading">Produce</h4>
-                  </div>
-                <p class="text-muted" id="services-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="service-heading">Produce</h4>
+                    </div>
+                    <p class="text-muted" id="services-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -159,190 +163,78 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <div class="header-underline-white"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div id="slider">
+            <a href="#" class="control_next">>></a>
+            <a href="#" class="control_prev">
+                <</a>
+                    <ul>
+                        <li>SLIDE 1</li>
+                        <li style="background: #aaa;">SLIDE 2</li>
+                        <li>SLIDE 3</li>
+                        <li style="background: #aaa;">SLIDE 4</li>
+                    </ul>
+        </div>
+
+        <div class="slider_option">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Autoplay Slider</label>
         </div>
     </section>
 
 
     <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
+    <section id="team">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Our Team</h2>
+                    <div class="header-underline"></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <img src="img/team/2.jpg" class="img-responsive" alt="">
+                        <h4>Stephen Polhill</h4>
+                        <div class="bio-box">
+                            <p class="bio-text">Mr. Polhill is a Certified Public Accountant and earned a bachelor’s degree and masters degree in Accounting from the Terry College of Business at The University of Georgia. Mr. Polhill began his career in public accounting
+                                and spent five years with KPMG’s assurance and advisory practice in Atlanta, GA. <span id="add-bio">In 2006, Mr. Polhill exited public accounting and served as Corporate Controller for PlyMart, a large Southeast regional building supply company. In 2008, Chip Patterson hired Mr. Polhill to come to AmeriPark where he served as Chief Financial Officer for eight years. While at AmeriPark, Mr. Polhill was responsible for all accounting & reporting functions, tax, legal and insurance matters, banking and finance, contract negotiation, deal analysis and also led the company through two sales transactions. Mr. Polhill reunited with Patterson and White in 2016 to bring his skill set to real estate development. His focus is on deal analysis and financial modeling, due diligence, tax incentive programs, contract negotiation, legal matters and financial reporting.</span></p>
+                            <span class="page-scroll btn btn-xl-primary" id="morebio">Read More</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <img src="img/team/2.jpg" class="img-responsive" alt="">
+                        <h4>Roger ("Chip") Patterson</h4>
+                        <div class="bio-box">
+                            <p class="bio-text"> While a student at Georgia State University, Mr. Patterson founded AmeriPark, a full service parking company in Atlanta, Georgia in 1986. AmeriPark is a full service parking company which provides parking management, valet,
+                                ambassador, and shuttle services in multiple industry verticals including hotels, <span id="add-bio2">restaurants, shopping centers, mixed-use facilities, hospitals and medical centers, entertainment complexes and arenas, casinos and gaming facilities, residential buildings, office buildings and airports. After nearly 30 years of expanding AmeriPark across the country and becoming one of the leading parking operators in the country, Mr. Patterson sold AmeriPark in 2015 to pursue his passion for real estate development and investment on a full time basis.
+Mr. Patterson has widespread experience in mixed use urban development, having been associated with dozens of development teams through AmeriPark. Whether it be creation of valet parking at Atlanta Hartsfield Airport, mixed use developments like 805 Peachtree, or conception of full service hotels like the Hotel Palomar in Atlanta, Mr. Patterson’s vision of taking the financial returns beyond the four walls of the parking garage doesn’t end. Mr. Patterson leads organizational design and management, arrangement negotiations, equity sponsorship and sourcing new opportunities.</span></p>
+                            <span class="page-scroll btn btn-xl-primary" id="morebio2">Read More</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <img src="img/team/2.jpg" class="img-responsive" alt="">
+                        <h4>Matthew White</h4>
+                        <div class="bio-box">
+                            <p class="bio-text">Mr. White earned a degree in Economics from the University of Mary Washington. He has an extensive background in real estate development, construction, and full service hospitality management. He has owned or been a managing
+                                member of over $200,000,000 in residential, commercial, and <span id="add-bio3">hospitality related developments over the last 15 years. Mr. White is a licensed general contractor in VA and GA, as well having started and exited entities that included condotels, conference centers, water and sewer utilities, solar, marinas and HVAC companies. Mr. White’s responsibilities include due diligence, project financial modeling, research, design, project management, contractor interview/negotiation, and project closeout.</span></p>
+                            <span class="page-scroll btn btn-xl-primary" id="morebio3">Read More</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
+
         </div>
     </section>
 
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -350,7 +242,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <div class="header-underline"></div>
                 </div>
             </div>
             <div class="row">
@@ -388,30 +280,29 @@
             </div>
         </div>
     </section>
-
+    <div class="footer-divider"> </div>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
-                </div>
-                <div class="col-md-4">
+
+                <div class="col-md-6 col-md-offset-3">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
+                    <div>
+                        <ul class="list-inline quicklinks">
+                            <li>Copyright &copy; Your Website 2016</li>
+                            <li><a href="#">Privacy Policy</a>
+                            </li>
+                            <li><a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -607,6 +498,7 @@
     </div>
 
     <!-- jQuery -->
+    <script src="vendor/jquery/newjquery.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->

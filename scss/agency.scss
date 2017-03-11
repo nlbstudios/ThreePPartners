@@ -1,7 +1,6 @@
 @import "variables.scss";
 @import "mixins.scss"; // Global Components
 
-
 body {
     overflow-x: hidden;
     @include body-font;
@@ -83,7 +82,7 @@ h6 {
     font-style: italic;
     border-radius: 8px;
     font-size: 18px;
-    padding: 8px 40px;
+    padding: 8px 20px;
     letter-spacing: 1px;
 }
 
@@ -94,7 +93,7 @@ h6 {
     font-style: italic;
     border-radius: 8px;
     font-size: 18px;
-    padding: 8px 40px;
+    padding: 8px 20px;
     letter-spacing: 1px;
 }
 // Custom Navigation Bar
@@ -303,8 +302,13 @@ header {
     margin: 0 auto 50px;
 }
 
+.header-underline-white {
+    @include section-underline(white);
+    margin: 0 auto 50px;
+}
+
 section {
-    padding: 100px 0;
+    padding: 25px 0;
 
     h2.section-heading {
         font-size: 40px;
@@ -323,7 +327,7 @@ section {
 }
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 50px 0;
     }
 }
 
@@ -337,13 +341,13 @@ section {
     color: white;
 }
 // Welcome section
+
 #welcome {
     background-image: url("../img/welcome_background.png");
     background-repeat: no-repeat;
     background-size: 125% 50%;
     background-position: center center;
 }
-
 @media (min-width: 768px) {
     #welcome {
         background-image: url("../img/welcome_background.png");
@@ -352,7 +356,6 @@ section {
         background-position: center center;
     }
 }
-
 @media (min-width: 1200px) {
     #welcome {
         background-image: url("../img/welcome_background.png");
@@ -362,176 +365,148 @@ section {
     }
 }
 
-
-
-
 .welcome-content {
-    margin: 0 0 30px;
+    @include large-content;
+    margin: 0 15px 15px 30px;
 }
+
+.more-content{
+
+}
+
 // Services Section
-
-
-//This is a test to see if the background image is messing up because of the name.
-
-
-// #services {
-//     background: url("http://i63.tinypic.com/jl1j54.png");
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: auto 100%;
-//     .service-heading {
-//         margin: 25px 0px 15px 140px;
-//         text-transform: none;
-//         color:white;
-//         font-size: 32px;
-//         font-style:italic;
-//     }
-// }
-
 #services {
     background: url("../img/serviceback.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
-    padding: 8% 10px 8% 10px;
-
+    padding: 8% 10px;
 }
-
-@media (min-width:992px){
-  #services {
-      background-image: url("../img/serviceback.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100% 100%;
-      padding: 8% 35px 8% 35px;
-}
+@media (min-width:992px) {
+    #services {
+        background-image: url("../img/serviceback.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        padding: 8% auto;
+    }
 }
 
 .service-heading {
-    margin: 25px 0px 15px 20px;
-    color:white;
+    margin: 25px 0 15px 20px;
+    color: white;
     font-size: 32px;
-    font-style:italic;
+    font-style: italic;
 }
 
 #services-content {
     color: $gray-lighter;
-    margin-top:25px;
+    margin-top: 25px;
 }
 
-
-.icon-col{
-  max-width:600px;
+.icon-col {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.services-icon{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-
+.services-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon-left{
-  margin-right:35px;
+.icon-left {
+    margin-right: 35px;
 }
 
-
-.icon-pos-fix{
-  margin-left:3px;
+.icon-pos-fix {
+    margin-left: 3px;
 }
-
 // Portfolio Section
-#portfolio {
-    .portfolio-item {
-        margin: 0 0 15px;
-        right: 0;
-
-        .portfolio-link {
-            display: block;
-            position: relative;
-            max-width: 400px;
-            margin: 0 auto;
-
-            .portfolio-hover {
-                background: fade-out($theme-primary, .9);
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                opacity: 0;
-                transition: all ease 0.5s;
-                -webkit-transition: all ease 0.5s;
-                -moz-transition: all ease 0.5s;
-
-                &:hover {
-                    opacity: 1;
-                }
-
-                .portfolio-hover-content {
-                    position: absolute;
-                    width: 100%;
-                    height: 20px;
-                    font-size: 20px;
-                    text-align: center;
-                    top: 50%;
-                    margin-top: -12px;
-                    color: white;
-
-                    i {
-                        margin-top: -12px;
-                    }
-
-                    h3,
-                    h4 {
-                        margin: 0;
-                    }
-                }
-            }
-        }
-
-        .portfolio-caption {
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: white;
-            text-align: center;
-            padding: 25px;
-
-            h4 {
-                text-transform: none;
-                margin: 0;
-            }
-
-            p {
-                @include serif-font;
-                font-style: italic;
-                font-size: 16px;
-                margin: 0;
-            }
-        }
-    }
-
-    * {
-        z-index: 2;
-    }
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0;
+    border-radius: 4px;
 }
-@media(min-width:767px) {
-    #portfolio {
-        .portfolio-item {
-            margin: 0 0 30px;
-        }
-    }
+
+#slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
 }
+
+#slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 300px;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
 
 // Team Section
-
 .team-member {
     text-align: center;
     margin-bottom: 50px;
 
+    .bio-box {
+        margin: 20px 0 0;
+    }
+
+    .bio-text {}
+
     img {
         margin: 0 auto;
-        border: 7px solid white;
+        border: 3px solid $gray-lighter;
+        border-radius: 25px;
     }
 
     h4 {
@@ -553,14 +528,15 @@ aside.clients {
 }
 // Contact Section
 
-section#contact {
-    background-color: $gray-darker;
-    background-image: url('../img/map-image.png');
-    background-position: center;
+#contact {
+    // background-color: $gray-darker;
+    background-image: url('../img/contact_background.png');
     background-repeat: no-repeat;
+    // background-size: 125% 50%;
+    background-position: center center;
 
     .section-heading {
-        color: white;
+        color: $theme-primary;
     }
 
     .form-group {
@@ -634,6 +610,12 @@ footer {
         text-transform: none;
     }
 }
+
+.footer-divider{
+  height:5px;
+  background-color: $theme-primary;
+}
+
 // Social Buttons
 
 ul.social-buttons {

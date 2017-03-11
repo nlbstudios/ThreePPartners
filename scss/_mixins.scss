@@ -73,6 +73,12 @@
 }
 
 // Font Mixins
+@mixin large-content{
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: $gray-light;
+}
+
 
 @mixin serif-font {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
