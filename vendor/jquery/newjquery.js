@@ -6,6 +6,29 @@ $("#add-bio").hide();
 $("#add-bio2").hide();
 $("#add-bio3").hide();
 
+
+
+// Welcome content
+
+$(document).ready(function(){
+  $("#morewelcome").click(function(){
+    $("#welcome-more").fadeToggle(500);
+  });
+});
+
+$(document).ready(function(){
+  $("#morewelcome").click(function(){
+    $("#morewelcome").fadeToggle(0);
+  });
+});
+
+$(document).ready(function(){
+  $("#morewelcome").click(function(){
+    $(".welcome-content").animate({"font-size":"28px", "line-height":"39px"}, 0)
+  })
+})
+
+
 //first bio button
 
 $(document).ready(function(){
@@ -47,54 +70,60 @@ $(document).ready(function(){
     $("#morebio3").fadeToggle(0);
   });
 });
-///
-$(document).ready(function(){
-  $("#morewelcome").click(function(){
-    $("#welcome-more").fadeToggle(500);
-  });
+
+// Portfolio jquery
+//
+// $('.portfolio-item1').click(function() {
+//     // var loc = $(this).attr('src');
+//     $('#portfoliomain').attr('src','.portfolio-item1');
+//     // var loc = $(this).attr("src");
+//     // $('.portfolio-item').attr("src",loc);
+// });
+
+$('.portfolio-item1').on({
+  'click' : function(){
+    $('.dumb').attr('src','../img/portfolio/portfolio1.png');
+  }
 });
 
-$(document).ready(function(){
-  $("#morewelcome").click(function(){
-    $("#morewelcome").fadeToggle(0);
-  });
+$('.portfolio-item2').on({
+  'click' : function(){
+    $('.dumb').attr('src','../img/portfolio/portfolio2.png');
+  }
 });
 
-$(document).ready(function(){
-  $("#morewelcome").click(function(){
-    $(".welcome-content").animate({"font-size":"18px", "line-height":"25px"}, 0)
-  })
-})
+$('.portfolio-item3').on({
+  'click' : function(){
+    $('.dumb').attr('src','../img/portfolio/portfolio3.png');
+  }
+});
 
+$('.portfolio-item4').on({
+  'click' : function(){
+    $('.dumb').attr('src','../img/portfolio/portfolio4.png');
+  }
+});
 
-// $("#add-bio").hide();
-// $("#add-bio2").hide();
-// $("#add-bio3").hide();
-//
-//
-// $(document).ready(function(){
-//   $("#morebio").click(function(){
-//       $("#add-bio").fadeToggle(1000);
-//   });
-// });
-//
-// $(document).ready(function(){
-//   $("#morebio2").click(function(){
-//       $("#add-bio2").fadeToggle(1000);
-//   });
-// });
-//
-// $(document).ready(function(){
-//   $("#morebio3").click(function(){
-//       $("#add-bio3").fadeToggle(1000);
-//   });
-// });
+$('.portfolio-item5').on({
+  'click' : function(){
+    $('.dumb').attr('src','../img/portfolio/portfolio5.png');
+  }
+});
 
-//
-//
-//
-//
-//
-//
-//
-//
+$('.portfolio-item6').on({
+  'click' : function(){
+    $('.dumb').attr('src','../img/portfolio/portfolio6.png');
+  }
+});
+
+$('.portfolio-item7').on({
+  'click' : function(){
+    $('.dumb').attr('src','../img/portfolio/portfolio7.png');
+  }
+});
+
+$('.portfolio-item8').on({
+  'click' : function(){
+    $('.dumb').attr('src','../img/portfolio/portfolio8.png');
+  }
+});

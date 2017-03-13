@@ -441,7 +441,7 @@ section {
 
 .welcome-content {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 28px;
   color: #777777;
   font-size: 20px;
   margin: 0; }
@@ -452,7 +452,7 @@ section {
 @media (min-width: 768px) {
   .welcome-content {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     color: #777777;
     margin: 0 15px 15px 30px; } }
 
@@ -499,9 +499,22 @@ section {
   margin-left: 3px; }
 
 .portfolio-main {
-  margin: auto 40px;
+  margin: auto auto;
   padding: 20px 20px;
   background-color: white; }
+
+.portfolio-thumbnails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+
+.portitem {
+  height: 100px;
+  width: 100px;
+  flex-shrink: .5; }
 
 .team-member {
   text-align: center;
