@@ -82,48 +82,48 @@ $(document).ready(function(){
 
 $('.portfolio-item1').on({
   'click' : function(){
-    $('.dumb').attr('src','../img/portfolio/portfolio1.png');
+    $('.mainport').attr('src','img/portfolio/portfolio1.png');
   }
 });
 
 $('.portfolio-item2').on({
   'click' : function(){
-    $('.dumb').attr('src','../img/portfolio/portfolio2.png');
+    $('.mainport').attr('src','img/portfolio/portfolio2.png');
   }
 });
 
 $('.portfolio-item3').on({
   'click' : function(){
-    $('.dumb').attr('src','../img/portfolio/portfolio3.png');
+    $('.mainport').attr('src','img/portfolio/portfolio3.png');
   }
 });
 
 $('.portfolio-item4').on({
   'click' : function(){
-    $('.dumb').attr('src','../img/portfolio/portfolio4.png');
+    $('.mainport').attr('src','img/portfolio/portfolio4.png');
   }
 });
 
 $('.portfolio-item5').on({
   'click' : function(){
-    $('.dumb').attr('src','../img/portfolio/portfolio5.png');
+    $('.mainport').attr('src','img/portfolio/portfolio5.png');
   }
 });
 
 $('.portfolio-item6').on({
   'click' : function(){
-    $('.dumb').attr('src','../img/portfolio/portfolio6.png');
+    $('.mainport').attr('src','img/portfolio/portfolio6.png');
   }
 });
 
 $('.portfolio-item7').on({
   'click' : function(){
-    $('.dumb').attr('src','../img/portfolio/portfolio7.png');
+    $('.mainport').attr('src','img/portfolio/portfolio7.png');
   }
 });
 
 $('.portfolio-item8').on({
   'click' : function(){
-    $('.dumb').attr('src','../img/portfolio/portfolio8.png');
+    $('.mainport').attr('src','img/portfolio/portfolio8.png');
   }
 });
