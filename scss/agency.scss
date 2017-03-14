@@ -464,7 +464,6 @@ section {
 .portfolio-main{
   margin:auto auto;
   padding: 20px 20px;
-  background-color: white;
 }
 
 .portfolio-thumbnails{
@@ -474,12 +473,25 @@ section {
   align-items: center;
   align-content: center;
   justify-content: center;
+  background-color: $theme-primary;
+  padding: 20px auto 20px auto;
 }
 
 .portitem{
   height:100px;
   width:100px;
   flex-shrink: .5;
+}
+
+@media (max-width: 769px){
+  .mainport{
+    max-width: 85%;
+  }
+}
+
+.click-text{
+  color: $gray-light;
+  font-style: italic;
 }
 
 // Team Section

@@ -22,12 +22,20 @@ $(document).ready(function(){
   });
 });
 
+if ($(window).width() <= 768){
+  $(document).ready(function(){
+    $("#morewelcome").click(function(){
+      $(".welcome-content").animate({"font-size":"16px", "line-height":"22px"}, 0)
+    })
+  })
+}else{
 $(document).ready(function(){
   $("#morewelcome").click(function(){
     $(".welcome-content").animate({"font-size":"28px", "line-height":"39px"}, 0)
   })
 })
 
+}
 
 //first bio button
 
