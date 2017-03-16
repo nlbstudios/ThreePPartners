@@ -419,21 +419,21 @@ section {
 #alt-heading {
   color: white; }
 
-#welcome {
+#whoweare {
   background-image: url("../img/welcome_background.png");
   background-repeat: no-repeat;
   background-size: 125% 50%;
   background-position: center center; }
 
 @media (min-width: 768px) {
-  #welcome {
+  #whoweare {
     background-image: url("../img/welcome_background.png");
     background-repeat: no-repeat;
     background-size: 125% 100%;
     background-position: center center; } }
 
 @media (min-width: 1200px) {
-  #welcome {
+  #whoweare {
     background-image: url("../img/welcome_background.png");
     background-repeat: no-repeat;
     background-size: 125% 150%;
@@ -455,48 +455,6 @@ section {
     font-size: 28px;
     color: #777777;
     margin: 0 15px 15px 30px; } }
-
-#services {
-  background: url("../img/serviceback.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
-  padding: 8% 10px; }
-
-@media (min-width: 992px) {
-  #services {
-    background-image: url("../img/serviceback.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    padding: 8% auto; } }
-
-.service-heading {
-  margin: 25px 0 15px 20px;
-  color: white;
-  font-size: 32px;
-  font-style: italic; }
-
-#services-content {
-  color: #c8c8c8;
-  margin-top: 25px; }
-
-.icon-col {
-  max-width: 600px;
-  margin: 0 auto; }
-
-.services-icon {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center; }
-
-.icon-left {
-  margin-right: 35px; }
-
-.icon-pos-fix {
-  margin-left: 3px; }
 
 .portfolio-main {
   margin: auto auto;
